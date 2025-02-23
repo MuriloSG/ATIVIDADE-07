@@ -17,7 +17,7 @@ Este é um projeto simples desenvolvido em **React** para gerenciar usuários fi
 - [SweetAlert2](https://sweetalert2.github.io/)
 - [ReqRes API](https://reqres.in/)
 
-## 📖 Como Funciona?
+## 📚 Como Funciona?
 
 ### 1. Listagem de Usuários
 Os usuários são obtidos da API ReqRes via **fetch API**:
@@ -91,6 +91,91 @@ Para a criação e exclusão de usuários, a API [ReqRes](https://reqres.in/) de
 | **201 Created** | O usuário foi criado com sucesso. |
 | **204 No Content** | O usuário foi excluído com sucesso (sem resposta no corpo). |
 | **404 Not Found** | Usuário não encontrado. |
+
+### 5. Requisitos e Respostas da API ReqRes
+
+#### Listagem de Usuários (GET)
+- **Endpoint**: `GET https://reqres.in/api/users?delay=3`
+- **Resposta**:
+```json
+{
+    "page": 1,
+    "per_page": 6,
+    "total": 12,
+    "total_pages": 2,
+    "data": [
+        {
+            "id": 1,
+            "email": "george.bluth@reqres.in",
+            "first_name": "George",
+            "last_name": "Bluth",
+            "avatar": "https://reqres.in/img/faces/1-image.jpg"
+        },
+        {
+            "id": 2,
+            "email": "janet.weaver@reqres.in",
+            "first_name": "Janet",
+            "last_name": "Weaver",
+            "avatar": "https://reqres.in/img/faces/2-image.jpg"
+        },
+        {
+            "id": 3,
+            "email": "emma.wong@reqres.in",
+            "first_name": "Emma",
+            "last_name": "Wong",
+            "avatar": "https://reqres.in/img/faces/3-image.jpg"
+        },
+        {
+            "id": 4,
+            "email": "eve.holt@reqres.in",
+            "first_name": "Eve",
+            "last_name": "Holt",
+            "avatar": "https://reqres.in/img/faces/4-image.jpg"
+        },
+        {
+            "id": 5,
+            "email": "charles.morris@reqres.in",
+            "first_name": "Charles",
+            "last_name": "Morris",
+            "avatar": "https://reqres.in/img/faces/5-image.jpg"
+        },
+        {
+            "id": 6,
+            "email": "tracey.ramos@reqres.in",
+            "first_name": "Tracey",
+            "last_name": "Ramos",
+            "avatar": "https://reqres.in/img/faces/6-image.jpg"
+        }
+    ],
+    "support": {
+        "url": "https://contentcaddy.io?utm_source=reqres&utm_medium=json&utm_campaign=referral",
+        "text": "Tired of writing endless social media content? Let Content Caddy generate it for you."
+    }
+}
+```
+
+#### Criação de Usuário (POST)
+- **Endpoint**: `POST https://reqres.in/api/users`
+- **Requisição**:
+```json
+{
+    "name": "morpheus",
+    "job": "leader"
+}
+```
+- **Resposta**:
+```json
+{
+    "name": "morpheus",
+    "job": "leader",
+    "id": "50",
+    "createdAt": "2025-02-23T11:57:09.924Z"
+}
+```
+
+#### Exclusão de Usuário (DELETE)
+- **Endpoint**: `DELETE https://reqres.in/api/users/{id}`
+- **Resposta**: Nenhum conteúdo (Status **204 No Content**)
 
 ## 💡 Referências
 - [Guia para Iniciantes - Consumindo APIs REST](https://www.dio.me/articles/guia-para-iniciantes-consumindo-apis-rest)
