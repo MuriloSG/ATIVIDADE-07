@@ -182,7 +182,7 @@ Para a criação e exclusão de usuários, a API [ReqRes](https://reqres.in/) de
 
 ### 1. Clonar o Repositório
 ```bash
-[git clone https://github.com/seu-usuario/gerenciador-de-usuarios.git](https://github.com/MuriloSG/ATIVIDADE-07.git)
+git clone https://github.com/seu-usuario/gerenciador-de-usuarios.git](https://github.com/MuriloSG/ATIVIDADE-07.git)
 ```
 
 ### 2. abrir projeto
