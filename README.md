@@ -1,5 +1,5 @@
 # Aluno: Murilo Santos Gonçalves
-# Gerenciador de Usuários - React + TailwindCSS
+# Gerenciador de Usuários - React + Vite + TailwindCSS
 
 Este é um projeto simples desenvolvido em **React** para gerenciar usuários fictícios utilizando a API [ReqRes](https://reqres.in/). Ele permite listar, buscar, criar e excluir usuários, utilizando a biblioteca **SweetAlert2** para interações e **TailwindCSS** para estilização. O principal objetivo é aprender a consumir end-points de uma API REST.
 
@@ -12,6 +12,7 @@ Este é um projeto simples desenvolvido em **React** para gerenciar usuários fi
 > **Importante**: Os dados **não** são persistidos no banco de dados da API ReqRes. Isso significa que se recarregar a página, os usuários criados ou excluídos desaparecerão.
 
 ## 🔗 Tecnologias Utilizadas
+- [Vite](https://vite.dev/guide/)
 - [React](https://react.dev/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [SweetAlert2](https://sweetalert2.github.io/)
@@ -176,6 +177,29 @@ Para a criação e exclusão de usuários, a API [ReqRes](https://reqres.in/) de
 #### Exclusão de Usuário (DELETE)
 - **Endpoint**: `DELETE https://reqres.in/api/users/{id}`
 - **Resposta**: Nenhum conteúdo (Status **204 No Content**)
+
+## 🔧 Como Clonar e Rodar o Projeto
+
+### 1. Clonar o Repositório
+```bash
+git clone https://github.com/seu-usuario/gerenciador-de-usuarios.git
+```
+
+### 2. abrir projeto
+```bash
+cd ATIVIDADE-07
+```
+
+### 3.instalar dependências
+```bash
+npm install
+```
+
+
+### 4. Executar o projeto
+```bash
+npm run dev
+```
 
 ## 💡 Referências
 - [Guia para Iniciantes - Consumindo APIs REST](https://www.dio.me/articles/guia-para-iniciantes-consumindo-apis-rest)
